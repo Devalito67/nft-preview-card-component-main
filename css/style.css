@@ -1,0 +1,153 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.nft-product {
+    width: 300px;
+    height: 546px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 25px;
+    border-radius: 15px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.nft-product__image {
+    height: 302px;
+    width: 300px;
+    margin: 0 auto;
+    background-image: url(../images/image-equilibrium.jpg);
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.nft-product__image a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nft-product__image a:hover {
+    background: hsla(178, 100%, 50%, 0.5);
+    background-image: url(../images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.nft-product__title {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.nft-product__title:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.nft-product__description {
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    margin-top: 17px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.divider {
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.blue-style {
+    color: hsl(178, 100%, 50%);
+}
+
+.nft-product__infos {
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nft-product__infos--cost {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+.nft-product__infos--time {
+    color: hsl(215, 51%, 70%);
+    padding-left: 115px;
+}
+
+.nft-product__creator--infos {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nft-product__creator img {
+    height: 32px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.nft-product__creator--name a {
+    color: white;
+}
+
+.nft-product__creator--name a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+@media (max-width:23.4375rem) {
+    .nft-product {
+        width: 275px;
+        height: 493px;
+    }
+
+    .nft-product__image {
+        height: 278px;
+        width: 278px;
+    }
+
+    .nft-product__description {
+        font-size: 16px;
+        margin-top: 14px;
+    }
+
+    .nft-product__infos {
+        height: 50px;
+    }
+
+    .nft-product__infos--time {
+        padding-left: 90px;
+    }
+}
